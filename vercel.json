@@ -3,8 +3,5 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "outputDirectory": ".next/static",
-  "env": {
-    "NEXT_PUBLIC_WEB3FORMS_KEY": "@web3forms_key"
-  }
+  "outputDirectory": ".next/static"
 }
