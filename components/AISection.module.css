@@ -1,0 +1,49 @@
+.section {
+  padding: 80px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.icon {
+  margin-bottom: 30px;
+}
+
+.icon img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.body {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 20px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .body {
+    font-size: 14px;
+  }
+}

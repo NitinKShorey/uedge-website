@@ -1,0 +1,154 @@
+.section {
+  padding: 80px 20px;
+  background: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.carouselContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 700px;
+}
+
+.avatar {
+  margin-bottom: 30px;
+}
+
+.avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quote {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.attribution {
+  text-align: center;
+}
+
+.author {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.position {
+  font-size: 14px;
+  color: #999;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.arrowBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #f5f7fa;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.arrowBtn:hover {
+  background: #e8ecf1;
+}
+
+.arrowBtn img {
+  width: 20px;
+  height: 20px;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  transition: background 0.2s;
+}
+
+.dot.active {
+  background: #0066cc;
+}
+
+.dot:hover {
+  background: #999;
+}
+
+.warning {
+  text-align: center;
+  padding: 16px;
+  background: #fff3cd;
+  border: 1px solid #ffecb5;
+  border-radius: 4px;
+  color: #856404;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 20px;
+  }
+
+  .heading {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .carousel {
+    gap: 30px;
+  }
+
+  .quote {
+    font-size: 16px;
+  }
+
+  .controls {
+    gap: 24px;
+  }
+
+  .arrowBtn {
+    width: 40px;
+    height: 40px;
+  }
+}

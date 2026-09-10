@@ -1,0 +1,89 @@
+.section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.textGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 700px;
+}
+
+.leadIn {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.rotatingContainer {
+  position: relative;
+  height: 60px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.word {
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  transform: translateY(10px);
+}
+
+.word.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cta {
+  display: inline-block;
+  padding: 14px 40px;
+  background: white;
+  color: #0066cc;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 20px;
+  }
+
+  .leadIn {
+    font-size: 16px;
+  }
+
+  .rotatingContainer {
+    height: 45px;
+    font-size: 32px;
+  }
+
+  .cta {
+    padding: 12px 32px;
+    font-size: 14px;
+  }
+}
