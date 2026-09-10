@@ -35,9 +35,6 @@ export default function Footer() {
 
         <div className={styles.copyright}>
           <p>© uedge AI transformation partner 2025</p>
-          <p className={styles.warning}>
-            ⚠️ Instagram link is generic. Update to actual company profile.
-          </p>
         </div>
       </div>
     </footer>

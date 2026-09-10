@@ -92,11 +92,6 @@ export default function Testimonials() {
             </button>
           </div>
         </div>
-
-        <p className={styles.warning}>
-          ⚠️ Placeholder content: Testimonials are Lorem ipsum. Real testimonials
-          needed before launch.
-        </p>
       </div>
     </section>
   );
