@@ -15,6 +15,9 @@ export default function Hero() {
             <div className={styles.logoBlock}>
               <div className={styles.logo}>
                 <img src="/images/logo-icon.avif" alt="Uedge" />
+                <span className={styles.logoText}>
+                  <span className={styles.logoU}>U</span>EDGE
+                </span>
               </div>
               <p className={styles.tagline}>AI transformation partner</p>
             </div>

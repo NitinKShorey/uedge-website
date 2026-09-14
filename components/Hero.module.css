@@ -57,6 +57,7 @@
 .logo {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 
 .logo img {
@@ -64,9 +65,22 @@
   height: 40px;
 }
 
+.logoText {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.logoU {
+  color: #E8B341;
+  margin-right: 0;
+}
+
 .tagline {
   font-size: 12px;
-  color: #b0b0b0;
+  color: #ffffff;
   margin: 0;
   font-weight: 400;
   letter-spacing: 0.5px;
