@@ -4,19 +4,12 @@ export default function AISection() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <div className={styles.icon}>
-          <img src="/images/rocketship.webp" alt="Rocketship" />
-        </div>
-
         <h2 className={styles.heading}>
-          AI Solutions Tailored for Your Success
+          AI Solutions Tailored for Your <span className={styles.accent}>Success</span>
         </h2>
 
         <p className={styles.body}>
-          We build intelligent systems that understand context, adapt to your
-          needs, and deliver measurable results. Whether it's conversational AI
-          for customer engagement or smart automation to streamline operations,
-          we turn complex challenges into competitive advantages.
+          Our smart bots streamline customer interactions, delivering exceptional experiences while reducing operational overhead. Voice integration solutions elevate your communication capabilities, making interactions smoother and more productive across all channels. Our sophisticated document analyzer simplifies complex data, enabling quicker, smarter business decisions.
         </p>
       </div>
     </section>

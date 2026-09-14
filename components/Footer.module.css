@@ -1,63 +1,26 @@
 .footer {
-  padding: 40px 20px 20px;
-  background: #1a1a1a;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #0A0F0D 0%, #0B0E14 100%);
   color: white;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.content {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #333;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
+  gap: 40px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
-  transition: opacity 0.2s;
-}
-
-.logo:hover {
-  opacity: 0.8;
 }
 
 .logo img {
   width: 32px;
   height: 32px;
-  border-radius: 6px;
-}
-
-.logo span {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.social {
-  display: flex;
-  gap: 24px;
-}
-
-.socialLink {
-  font-size: 14px;
-  color: #ccc;
-  transition: color 0.2s;
-}
-
-.socialLink:hover {
-  color: white;
 }
 
 .copyright {
@@ -67,31 +30,55 @@
 }
 
 .copyright p {
-  margin: 4px 0;
+  margin: 0;
 }
 
-.warning {
-  color: #ff9800;
-  margin-top: 8px;
-  font-size: 12px;
+.social {
+  display: flex;
+  gap: 16px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #3EE8B8;
+  border-radius: 4px;
+  color: #3EE8B8;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.socialLink:hover {
+  background: rgba(62, 232, 184, 0.1);
+  box-shadow: 0 0 12px rgba(62, 232, 184, 0.2);
+}
+
+.socialLink span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
   .footer {
-    padding: 30px 20px 15px;
+    padding: 30px 20px;
   }
 
-  .content {
-    flex-direction: column;
+  .container {
+    grid-template-columns: 1fr;
     gap: 20px;
-    align-items: flex-start;
-  }
-
-  .social {
-    gap: 16px;
   }
 
   .copyright {
-    text-align: left;
+    text-align: center;
+  }
+
+  .social {
+    justify-content: center;
   }
 }

@@ -1,46 +1,61 @@
 "use client";
 
+import { useState } from "react";
 import styles from "./Hero.module.css";
-import { smoothScroll } from "@/lib/utils";
+import ContactModal from "./ContactModal";
 
 export default function Hero() {
-  const handleGetInTouch = () => {
-    smoothScroll("contact-form");
-  };
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className={styles.hero}>
-      <div className={styles.container}>
-        <div className={styles.content}>
-          <div className={styles.logo}>
-            <img src="/images/logo.webp" alt="Uedge" />
-            <span>Uedge</span>
+    <>
+      <section className={styles.hero}>
+        <div className={styles.container}>
+          <div className={styles.header}>
+            <div className={styles.logo}>
+              <img src="/images/logo-icon.avif" alt="Uedge" />
+            </div>
+            <button
+              className={styles.navButton}
+              onClick={() => setIsModalOpen(true)}
+            >
+              GET IN TOUCH
+            </button>
           </div>
 
-          <h1 className={styles.headline}>
-            Propel growth using fast, smart, and scalable solutions to simplify,
-            automate, and thrive—alongside your AI Transformation partner
-          </h1>
+          <div className={styles.content}>
+            <h1 className={styles.headline}>
+              Propel growth using fast, smart, and scalable solutions to
+              simplify, automate, and thrive—alongside your{" "}
+              <span className={styles.accent}>AI Transformation</span> partner
+            </h1>
 
-          <div className={styles.body}>
-            <p>
-              Artificial intelligence is transforming how businesses operate.
-              But implementation is complex. We provide intelligent automation
-              that reduces operational costs, eliminates workflow bottlenecks,
-              and empowers your team to focus on what matters most.
-            </p>
-            <p>
-              From custom AI agents to intelligent chatbots and workflow
-              automation, we combine cutting-edge technology with deep industry
-              expertise to unlock new opportunities for growth and efficiency.
-            </p>
+            <div className={styles.body}>
+              <p>
+                Imagine your business operating effortlessly, your team freed
+                from endless cycles of repetitive tasks, empowered instead to
+                innovate and drive meaningful growth. At our AI agency, we
+                specialize in turning this vision into reality. Our advanced
+                automation solutions take on mundane processes, dramatically
+                cutting costs, reducing bottlenecks, and enabling you to scale
+                efficiently and profitably.
+              </p>
+              <p>
+                Automation isn't just technology—it's a story of reclaimed time,
+                increased profits, and empowered employees. By partnering with
+                us, you transform routine processes into powerful opportunities
+                for growth.
+              </p>
+            </div>
           </div>
 
-          <button className={styles.cta} onClick={handleGetInTouch}>
-            Get in touch
-          </button>
+          <div className={styles.imageContainer}>
+            <img src="/images/hero-rocket.webp" alt="Hand holding rocket" />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+    </>
   );
 }

@@ -1,21 +1,22 @@
+"use client";
+
+import { useState } from "react";
 import Hero from "@/components/Hero";
 import AISection from "@/components/AISection";
 import RotatingWords from "@/components/RotatingWords";
-import Features from "@/components/Features";
-import Testimonials from "@/components/Testimonials";
-import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import ContactModal from "@/components/ContactModal";
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <main>
       <Hero />
       <AISection />
-      <RotatingWords />
-      <Features />
-      <Testimonials />
-      <ContactForm />
+      <RotatingWords onOpenModal={() => setIsModalOpen(true)} />
       <Footer />
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </main>
   );
 }

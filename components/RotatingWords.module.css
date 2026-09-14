@@ -1,6 +1,6 @@
 .section {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  background: linear-gradient(135deg, #0A0F0D 0%, #0B0E14 100%);
   color: white;
   text-align: center;
 }
@@ -26,8 +26,9 @@
 
 .leadIn {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
+  color: #b0b0b0;
 }
 
 .rotatingContainer {
@@ -45,6 +46,7 @@
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   transform: translateY(10px);
+  color: #3EE8B8;
 }
 
 .word.active {
@@ -55,17 +57,20 @@
 .cta {
   display: inline-block;
   padding: 14px 40px;
-  background: white;
-  color: #0066cc;
+  background: #3EE8B8;
+  color: #1a1a1a;
   font-size: 16px;
   font-weight: 600;
+  border: none;
   border-radius: 6px;
+  cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 8px 24px rgba(62, 232, 184, 0.3);
 }
 
 .cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 32px rgba(62, 232, 184, 0.4);
 }
 
 @media (max-width: 768px) {

@@ -1,6 +1,6 @@
 .section {
   padding: 80px 20px;
-  background: #ffffff;
+  background: linear-gradient(135deg, #0A0F0D 0%, #0B0E14 100%);
   text-align: center;
 }
 
@@ -9,27 +9,21 @@
   margin: 0 auto;
 }
 
-.icon {
-  margin-bottom: 30px;
-}
-
-.icon img {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto;
-}
-
 .heading {
   font-size: 36px;
   font-weight: 700;
-  margin-bottom: 20px;
-  color: #1a1a1a;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.accent {
+  color: #3EE8B8;
 }
 
 .body {
   font-size: 16px;
   line-height: 1.7;
-  color: #555;
+  color: #b0b0b0;
   max-width: 700px;
   margin: 0 auto;
 }

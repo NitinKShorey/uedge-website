@@ -2,11 +2,14 @@
 
 import { useEffect, useState } from "react";
 import styles from "./RotatingWords.module.css";
-import { smoothScroll } from "@/lib/utils";
 
 const WORDS = ["Breakthrough", "Evolution", "Transformation", "Expansion", "Edge"];
 
-export default function RotatingWords() {
+interface RotatingWordsProps {
+  onOpenModal: () => void;
+}
+
+export default function RotatingWords({ onOpenModal }: RotatingWordsProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -16,10 +19,6 @@ export default function RotatingWords() {
 
     return () => clearInterval(interval);
   }, []);
-
-  const handleLetsTalk = () => {
-    smoothScroll("contact-form");
-  };
 
   return (
     <section className={styles.section}>
@@ -43,8 +42,8 @@ export default function RotatingWords() {
             </div>
           </div>
 
-          <button className={styles.cta} onClick={handleLetsTalk}>
-            Let's Talk
+          <button className={styles.cta} onClick={onOpenModal}>
+            LET'S TALK
           </button>
         </div>
       </div>
