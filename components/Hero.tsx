@@ -12,8 +12,11 @@ export default function Hero() {
       <section className={styles.hero}>
         <div className={styles.container}>
           <div className={styles.header}>
-            <div className={styles.logo}>
-              <img src="/images/logo-icon.avif" alt="Uedge" />
+            <div className={styles.logoBlock}>
+              <div className={styles.logo}>
+                <img src="/images/logo-icon.avif" alt="Uedge" />
+              </div>
+              <p className={styles.tagline}>AI transformation partner</p>
             </div>
             <button
               className={styles.navButton}
